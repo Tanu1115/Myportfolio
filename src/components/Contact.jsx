@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import {
   FaGithub,
   FaLinkedin,
@@ -8,6 +9,31 @@ import {
 } from 'react-icons/fa';
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'tanukharwar1115',      // Your EmailJS service ID
+        'template_z4pdfwt',     // Your EmailJS template ID
+        form.current,
+        'ogbx7uwRZ88U7hPUt'     // Your EmailJS public key
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert(' Message sent successfully!');
+          form.current.reset();
+        },
+        (error) => {
+          console.log(error.text);
+          alert(' Message failed to send. Please try again.');
+        }
+      );
+  };
+
   return (
     <section
       id="contact"
@@ -17,20 +43,26 @@ const Contact = () => {
         {/* LEFT: Contact Form */}
         <div className="w-full md:w-1/2">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">Let’s Work Together</h2>
-          <form className="space-y-5">
+          <form ref={form} onSubmit={sendEmail} className="space-y-5">
             <input
               type="text"
+              name="user_name"
               placeholder="Your Name"
+              required
               className="w-full p-3 rounded bg-[#1a1a1a] text-white placeholder-gray-400 border border-[#444] focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <input
               type="email"
+              name="user_email"
               placeholder="Your Email"
+              required
               className="w-full p-3 rounded bg-[#1a1a1a] text-white placeholder-gray-400 border border-[#444] focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <textarea
+              name="message"
               rows="5"
               placeholder="Your Message"
+              required
               className="w-full p-3 rounded bg-[#1a1a1a] text-white placeholder-gray-400 border border-[#444] focus:outline-none focus:ring-2 focus:ring-blue-500"
             ></textarea>
             <button
