@@ -16,7 +16,7 @@ const About = () => {
         <p className="text-[#ccc] text-base sm:text-lg leading-relaxed max-w-4xl mb-6">
           Hello! I'm <span className="text-white font-semibold">Tanu</span>, a dedicated and
           detail-oriented <span className="text-white font-semibold">MERN Stack Developer</span>{' '}
-          based in India. I craft full-stack web applications using MongoDB, Express.js, React.js,
+           I craft full-stack web applications using MongoDB, Express.js, React.js,
           and Node.js — optimized for performance, usability, and maintainability.
         </p>
 
