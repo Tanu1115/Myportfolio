@@ -1,45 +1,54 @@
 import React from 'react';
-import { FaLinkedin, FaGithub, FaEnvelope, FaPhone, FaLocationArrow } from 'react-icons/fa';
+import {
+  FaLinkedin,
+  FaGithub,
+  FaEnvelope,
+  FaPhone,
+  FaLocationArrow,
+} from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-[white] text-[black] py-12 px-6 mt-10">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
-        
+    <footer className="bg-white text-black py-12 px-4 sm:px-6 mt-10">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
         {/* Logo & Tagline */}
         <div>
-          <h2 className="text-white text-2xl font-bold mb-3">Tanu.dev</h2>
-          <p className="text-sm leading-6">
+          <h2 className="text-2xl font-bold mb-3">Tanu.dev</h2>
+          <p className="text-sm leading-6 text-gray-700">
             MERN Stack Developer passionate about building web apps that solve real-world problems.
           </p>
         </div>
 
         {/* Quick Links */}
         <div>
-          <h3 className="text-white text-lg font-semibold mb-4">Quick Links</h3>
-          <ul className="space-y-2 text-sm">
-            <li><a href="#home" className="hover:text-[gray]">Home</a></li>
-            <li><a href="#about" className="hover:text-[gray]">About</a></li>
-            <li><a href="#services" className="hover:text-[gray]">Services</a></li>
-            <li><a href="#projects" className="hover:text-[gray]">Projects</a></li>
-            <li><a href="#contact" className="hover:text-[gray]">Contact</a></li>
+          <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+          <ul className="space-y-2 text-sm text-gray-800">
+            <li><a href="#home" className="hover:text-gray-500 transition">Home</a></li>
+            <li><a href="#about" className="hover:text-gray-500 transition">About</a></li>
+            <li><a href="#services" className="hover:text-gray-500 transition">Services</a></li>
+            <li><a href="#projects" className="hover:text-gray-500 transition">Projects</a></li>
+            <li><a href="#contact" className="hover:text-gray-500 transition">Contact</a></li>
           </ul>
         </div>
 
         {/* Contact Info */}
         <div>
-          <h3 className="text-white text-lg font-semibold mb-4">Contact</h3>
-          <ul className="space-y-3 text-sm">
+          <h3 className="text-lg font-semibold mb-4">Contact</h3>
+          <ul className="space-y-3 text-sm text-gray-800">
             <li className="flex items-center gap-3">
-              <FaEnvelope className="text-[black]" />
-              <a href="mailto:tanukhrwar15@gmail.com">tanukhrwar15@gmail.com</a>
+              <FaEnvelope />
+              <a href="mailto:tanukhrwar15@gmail.com" className="hover:underline break-all">
+                tanukhrwar15@gmail.com
+              </a>
             </li>
             <li className="flex items-center gap-3">
-              <FaPhone className="text-[black]" />
-              <a href="tel:+919877644783">+91 98776 44783</a>
+              <FaPhone />
+              <a href="tel:+919877644783" className="hover:underline">
+                +91 98776 44783
+              </a>
             </li>
             <li className="flex items-center gap-3">
-              <FaLocationArrow className="text-[black]" />
+              <FaLocationArrow />
               Chandigarh, India
             </li>
           </ul>
@@ -47,15 +56,28 @@ const Footer = () => {
 
         {/* Social Links */}
         <div>
-          <h3 className="text-white text-lg font-semibold mb-4">Follow Me</h3>
-          <div className="flex gap-5 text-xl">
-            <a href="https://www.linkedin.com/in/tanu-k-b62a42318" target="_blank" rel="noreferrer" className="hover:text-[gray]">
+          <h3 className="text-lg font-semibold mb-4">Follow Me</h3>
+          <div className="flex gap-5 text-xl text-gray-800">
+            <a
+              href="https://www.linkedin.com/in/tanu-k-b62a42318"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-gray-500 transition"
+            >
               <FaLinkedin />
             </a>
-            <a href="https://github.com/Tanu1115" target="_blank" rel="noreferrer" className="hover:text-[gray]">
+            <a
+              href="https://github.com/Tanu1115"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-gray-500 transition"
+            >
               <FaGithub />
             </a>
-            <a href="mailto:tanukharwar1115@gmail.com" className="hover:text-[gray]">
+            <a
+              href="mailto:tanukharwar1115@gmail.com"
+              className="hover:text-gray-500 transition"
+            >
               <FaEnvelope />
             </a>
           </div>
@@ -63,12 +85,11 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-[#334155] mt-10 pt-6 text-center text-sm">
-        © 2025 <span className="text-black">Tech.Exllence</span> — All rights reserved.
+      <div className="border-t border-gray-300 mt-10 pt-6 text-center text-sm text-gray-700">
+        © 2025 <span className="font-semibold">Tech.Excellence</span> — All rights reserved.
       </div>
     </footer>
   );
 };
 
 export default Footer;
-
