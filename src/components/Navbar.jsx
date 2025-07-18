@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import mernlogo from '../assets/mernlogo.png';
+// import mernlogo from '../assets/mernlogo.png';
 import { Menu, X } from 'lucide-react'; // Hamburger & close icons
 
 const Navbar = () => {
@@ -10,8 +10,8 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         {/* Logo + Name */}
         <div className="flex items-center gap-3">
-          <img src={mernlogo} alt="Logo" className="w-8 h-8" />
-          <h1 className="text-2xl font-extrabold tracking-wide">Tech Excellence</h1>
+          {/* <img src={mernlogo} alt="Logo" className="w-8 h-8" /> */}
+          <h1 className="text-2xl font-extrabold tracking-wide">MERNVerse</h1>
         </div>
 
         {/* Desktop Nav Links */}

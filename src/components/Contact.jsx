@@ -48,8 +48,8 @@ const Contact = () => {
           <div className="space-y-5 text-[#ccc] text-base">
             <p className="flex items-center gap-3">
               <FaEnvelope className="text-white" />
-              <a href="mailto:tanukhrwar15@gmail.com" className="hover:underline break-all">
-                tanukhrwar15@gmail.com
+              <a href="mailto:tanukharwar1115@gmail.com" className="hover:underline break-all">
+                tanukharwar1115@gmail.com
               </a>
             </p>
             <p className="flex items-center gap-3">

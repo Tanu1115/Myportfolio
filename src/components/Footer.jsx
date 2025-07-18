@@ -37,8 +37,8 @@ const Footer = () => {
           <ul className="space-y-3 text-sm text-gray-800">
             <li className="flex items-center gap-3">
               <FaEnvelope />
-              <a href="mailto:tanukhrwar15@gmail.com" className="hover:underline break-all">
-                tanukhrwar15@gmail.com
+              <a href="mailto:tanukharwar1115@gmail.com" className="hover:underline break-all">
+                tanukharwar1115@gmail.com
               </a>
             </li>
             <li className="flex items-center gap-3">
@@ -86,7 +86,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-300 mt-10 pt-6 text-center text-sm text-gray-700">
-        © 2025 <span className="font-semibold">Tech.Excellence</span> — All rights reserved.
+        © 2025 <span className="font-semibold">MERNVerse</span> — All rights reserved.
       </div>
     </footer>
   );

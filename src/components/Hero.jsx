@@ -9,7 +9,7 @@ const Hero = () => {
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white animate-fadeInUp">
-        Tech Excellence
+        MERNVerse
       </h1>
     </section>
   );
